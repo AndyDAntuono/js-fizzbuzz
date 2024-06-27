@@ -17,6 +17,12 @@
 	background-color: darkcyan;
 }
 
+.fizzbuzzdom_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .square {
 	width: 120px;
 	height: 120px;

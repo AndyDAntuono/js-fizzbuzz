@@ -1,5 +1,5 @@
 //recupero la scacchiera
-const fizzbuzzdom = document.querySelector(`.fizzbuzzdom`)
+const fizzbuzzdom_content = document.querySelector(`.fizzbuzzdom_content`)
 
 //calcolo un for che rappresenti un ciclo che parta dal numero fino al numero 100
 for (let i=1; i <= 100; i++){
@@ -36,5 +36,5 @@ for (let i=1; i <= 100; i++){
         console.log(`${i}Buzz`);
     }
 
-    fizzbuzzdom.append(square);
+    fizzbuzzdom_content.append(square);
 }
