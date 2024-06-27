@@ -11,4 +11,5 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 
 *SOLUZIONE*
 
-- Prima ancora ancora di creare una griglia tramite css, testo un incrementazione che parta da fino 100 tramite javascript;
+- Prima ancora ancora di creare una griglia tramite css, testo un ciclo e che parta da 1 fino 100 tramite javascript;
+- SE il ciclo si comporta nel modo desiderato procedo a personalizzare i file html e css;
