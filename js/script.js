@@ -7,16 +7,17 @@ for (let i = 1; i < 10; i++) {
 }
 */
 
-for (var i=1; i <= 100; i++){
+for (let i=1; i <= 100; i++){
     console.log(i);
-    if( i % 3 && x % 5 ) {
+    if( i % 3 && i % 5 ) {
         console.log(`${i}FizzBuzz`);
-    } else {
-        if( i % 3 == 0 ) {
-            console.log(`${i}Fizz`);
-        }
-        if( x % 5 == 0 ) {
-            console.log(`${i}Buzz`);
-        }
+    } 
+    
+    else if ( i % 3 == 0 ) {
+        console.log(`${i}Fizz`);
     }
-}​
+        
+    else if( i % 5 == 0 ) {
+        console.log(`${i}Buzz`);
+    }
+}
