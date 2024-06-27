@@ -13,6 +13,7 @@
 .fizzbuzzdom {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	background-color: darkcyan;
 }
 
@@ -22,6 +23,8 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	border: 1px solid black;
+	margin: 2px;
 	font-size: 26px;
 }
 
