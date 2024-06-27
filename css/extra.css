@@ -1,0 +1,341 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/************************
+    SOLUTIONS
+
+************************/
+
+
+/*exercise 1 solution*/
+
+.ex-1-square:hover {
+    background-color: red;
+    transition: 5s;
+}
+
+/*exercise 2 solution*/
+
+.ex-2-square {
+    animation: growing 10s infinite;
+}
+
+@keyframes growing  {
+
+    0% {
+        width: 100px;
+    }
+
+    25% {
+        width: 325px;
+    }
+
+    50% {
+        width: 550px;
+    }
+
+    75% {
+        width: 775px;
+    }
+
+    100% {
+        width: 900px;
+    }
+}
+
+/*exercise 3 solution*/
+
+.ex-3-square:hover {
+    animation: ex3-square_to_circle 5s;
+}
+
+@keyframes ex3-square_to_circle {
+    
+    0% {
+        border-radius: 0%;
+    }
+
+    25% {
+        border-radius: 12.5%;
+    }
+
+    50% {
+        border-radius: 25%;
+    }
+
+    75% {
+        border-radius: 32.5%;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}
+
+/*exercise 4 solution*/
+
+.ex-4-square {
+    animation: ex4-fading 5s infinite;
+}
+
+@keyframes ex4-fading {
+
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+/*exercise 5 solution*/
+
+.ex-5-square:hover {
+    animation: ex-5-square-growing 5s;
+}
+
+@keyframes ex-5-square-growing  {
+
+    0% {
+        width: 60px;
+        height: 60px;
+    }
+
+    25% {
+        width: 75px;
+        height: 75px;
+    }
+
+    50% {
+        width: 90px;
+        height: 90px;
+    }
+
+    75% {
+        width: 105px;
+        height: 105px;
+    }
+
+    100% {
+        width: 120px;
+        height: 120px;
+    }
+    
+}
+
+.ex-5-square:active {
+    animation: ex-5-square-shrinking 5s;
+    /*non so se ho usato l'effetto sbagliato, ma il rimpicciolimento si manifesta solo
+      se si clicca sul quadrato rosso e si tiene premuto col mouse*/
+}
+
+@keyframes ex-5-square-shrinking  {
+
+    0% {
+        width: 60px;
+        height: 60px;
+    }
+
+    25% {
+        width: 52.5px;
+        height: 52.5px;
+    }
+
+    50% {
+        width: 45px;
+        height: 45px;
+    }
+
+    75% {
+        width: 37.5px;
+        height: 37.5px;
+    }
+
+    100% {
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+/*exercise 6 solution*/
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+    transition: 5s;
+}
+
+/*exercise 7 solution*/
+
+.ex-7-img:hover {
+    filter: sepia(100%);
+    border-radius: 50%;
+    transition: 10s;
+}
+
+/*exercise 8 solution*/
+
+.ex-8-img:active {
+    filter: invert(100%);
+    transform: scaleX(-1);
+    border-radius: 25px;
+    transition: 10s;
+}
+
+/*Per ricreare gli effetti impostati ho preferito :active anziché :hover perché altrimenti
+la proprietà tranform non dava il giusto effetto */
+
+/*exercise 9 solution*/
+
+.ex-9-img:hover {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 40px;
+    transition: 10s;
+}
+
+/*exercise 10 solution*/
+
+.ex-10-icon:hover  {
+    animation: ex-10-icon_rotation 1s linear infinite;
+}
+
+@keyframes ex-10-icon_rotation {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/*exercise 11 solution*/
+
+.ex-11-icon:hover  {
+    animation: ex-11-icon_rotation 5s linear infinite;
+}
+
+@keyframes ex-11-icon_rotation {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
+/*exercise 12 solution*/
+
+.ex-12-button:hover .ex-12-top-white {
+    left: 50%;
+    transition: 5s;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    right: 50%;
+    transition: 5s;
+}
+
+/*exercise 13 solution*/
+
+.ex-13-top-white  {
+    animation: ex-13-top-white_rotation 5s linear infinite;
+}
+
+@keyframes ex-13-top-white_rotation {
+
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    25% {
+        top: -10px;
+        left: 90%;
+    }
+
+    50% {
+        top: 60px;
+        left: 90%;
+    }
+
+    75% {
+        top: 60px;
+        left: 0%;
+    }
+
+    100% {
+        top: -10px;
+        left: 0%;
+    }
+    
+}
+
+.ex-13-bottom-white  {
+    animation: ex-13-bottom-white_rotation 5s linear infinite;
+}
+
+@keyframes ex-13-bottom-white_rotation {
+
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    25% {
+        bottom: -10px;
+        right: 90%;
+    }
+
+    50% {
+        bottom: 60px;
+        right: 90%;
+    }
+
+    75% {
+        bottom: 60px;
+        right: 0%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 10%;
+    }
+    
+}
