@@ -13,3 +13,7 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 
 - Prima ancora ancora di creare una griglia tramite css, testo un ciclo e che parta da 1 fino 100 tramite javascript;
 - SE il ciclo si comporta nel modo desiderato procedo a personalizzare i file html e css;
+- nel file css creo delle classi. Alcune fungeranno da contenitori (container, fizzbuzzdom e fizzbuzzdom_content) per i "quadrati numerati". Queste sono da inserire nel file index.html;
+- Nel file index.html creo un layout basandomi sulle classi collegato a Boostrap 5.3 (vedere l'appposito link nella sezione head nel file index.html);
+- Aggiungo ulteriori classi nel css che serviranno come colori di sfondo per i quadrati (vedere la sezione bg squares nello style.css);
+- "Collego" le classi css del colore di sfondo ai rispettivi elementi all'interno del ciclo del file script.js;
